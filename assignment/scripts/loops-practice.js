@@ -49,9 +49,28 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
+let i = 0;
+while( i < stars.length + 1) {
+  console.log(stars[i]);
+  i++;
+}
+console.log(stars.length); // length of 5
+// Undefined explanation
+// when the i = 5, it will run the loop producing the value of 6. 
+// at 6, it will not run the loop, but the value exists outside,
+// and is so undefined.
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
-
+let x = 0;
+while( x < 6) {
+  console.log(x);
+  x++;
+}
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+let y = 10;
+while( y > 4 ){
+  console.log(y);
+  y--;
+}
